@@ -38,3 +38,18 @@ Add a file /etc/sysctl.d/01-disable-aslr.conf containing:
 kernel.randomize_va_space = 0
 ```
 should permanently disable this.
+
+
+### Various tips for diffing two files
+
+Diffing files in two columns
+```
+diff -y -W 160 dqn.py others/VashishtMadhavan/dqn.py |less
+```
+where `-y` means line by line.
+and `-W 160` means width (in chars of the output).
+
+Good visual-style vim-related diff
+```
+vimdiff dqn.py others/dqn.py
+```
