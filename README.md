@@ -59,3 +59,15 @@ vimdiff dqn.py others/dqn.py
 ```python
 tf.get_collection(tf.GraphKeys.GLOBAL_VARIABLES)
 ```
+
+
+### How to run tensorflow computation only on one GPU
+
+It is done by setting an environment variable `CUDA_VISIBLE_DEVICES` to a comma separated list of wanted GPUs.
+
+
+```python
+import os
+os.environ['CUDA_VISIBLE_DEVICES'] = "1"
+```
+
