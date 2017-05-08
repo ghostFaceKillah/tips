@@ -53,3 +53,9 @@ Good visual-style vim-related diff
 ```
 vimdiff dqn.py others/dqn.py
 ```
+
+### How to print all variables in a tensorflow graph
+
+```python
+tf.get_collection(tf.GraphKeys.VARIABLES)
+```
