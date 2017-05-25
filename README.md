@@ -71,3 +71,11 @@ import os
 os.environ['CUDA_VISIBLE_DEVICES'] = "1"
 ```
 
+### How to run exploit so you can still type things into shell
+
+if we finish the first process before the pipe, we won't be able to pass input to the second!
+
+```bash
+(python exploit.py; cat) | /opt/protostar/bin/stack5 
+```
+
