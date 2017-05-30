@@ -79,3 +79,9 @@ if we finish the first process before the pipe, we won't be able to pass input t
 (python exploit.py; cat) | /opt/protostar/bin/stack5 
 ```
 
+
+### How to screenshot part of screen in Ubuntu 16
+
+```
+gnome-screenshot -a
+```
