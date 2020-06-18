@@ -85,3 +85,9 @@ if we finish the first process before the pipe, we won't be able to pass input t
 ```
 gnome-screenshot -a
 ```
+
+
+Misc tips
+How to quickly kill a process using port 8000 in Linux?
+
+fuser -k 8000/udp
