@@ -91,3 +91,13 @@ Misc tips
 How to quickly kill a process using port 8000 in Linux?
 
 fuser -k 8000/udp
+
+
+
+### Hot to stop displaymanager
+
+`systemctl isolate multi-user.target`. # disable the graphical target
+`modprobe -r nvidia-drm`     #  Unload the drivers
+`rmmod` also unloads the drivers
+`systemctl start graphical.target`  restarts the graphical target
+
