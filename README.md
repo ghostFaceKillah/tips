@@ -128,3 +128,6 @@ To uninstall the CUDA Toolkit, run cuda-uninstaller in /usr/local/cuda-10.2/bin
 To uninstall the NVIDIA Driver, run nvidia-uninstall
 ```
 
+### How to setup the standard python env
+pipenv --python=python3.7
+
