@@ -104,3 +104,27 @@ fuser -k 8000/udp
 
 `systemctl start graphical.target`  restarts the graphical target
 
+
+### Various other tricks for installing NVIDIA CUDA etc
+
+`dpkg -l | grep nvidia` search 
+
+```
+sudo apt-get purge nvidia*
+sudo apt-get autoremove
+sudo sh cuda-*.run --silient --override
+```
+
+```
+Driver:   Installed
+Toolkit:  Installed in /usr/local/cuda-10.2/
+Samples:  Installed in /home/mike/, but missing recommended libraries
+
+Please make sure that
+ -   PATH includes /usr/local/cuda-10.2/bin
+ -   LD_LIBRARY_PATH includes /usr/local/cuda-10.2/lib64, or, add /usr/local/cuda-10.2/lib64 to /etc/ld.so.conf and run ldconfig as root
+
+To uninstall the CUDA Toolkit, run cuda-uninstaller in /usr/local/cuda-10.2/bin
+To uninstall the NVIDIA Driver, run nvidia-uninstall
+```
+
