@@ -97,6 +97,7 @@ fuser -k 8000/udp
 ### Hot to stop displaymanager
 
 `systemctl isolate multi-user.target`. # disable the graphical target
+`sudo service lightdm stop`   # manual stop of window manager often still needed ¯\_(ツ)_/¯ 
 
 `modprobe -r nvidia-drm`     #  Unload the drivers
 
