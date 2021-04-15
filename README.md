@@ -98,6 +98,7 @@ fuser -k 8000/udp
 
 `systemctl isolate multi-user.target`. # disable the graphical target
 `sudo service lightdm stop`   # manual stop of window manager often still needed ¯\_(ツ)_/¯ 
+`sudo service gdm3 stop`
 
 `modprobe -r nvidia-drm`     #  Unload the drivers
 
