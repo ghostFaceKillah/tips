@@ -94,19 +94,35 @@ fuser -k 8000/udp
 ```
 
 
+### How to stop displaymanager
 
+```
+systemctl isolate multi-user.target
+# disable the graphical target
+```
 
-### Hot to stop displaymanager
+```
+sudo service lightdm stop
+# manual stop of window manager often still needed ¯\_(ツ)_/¯ 
+```
 
-`systemctl isolate multi-user.target`. # disable the graphical target
-`sudo service lightdm stop`   # manual stop of window manager often still needed ¯\_(ツ)_/¯ 
-`sudo service gdm3 stop`
+```
+sudo service gdm3 stop
+```
 
-`modprobe -r nvidia-drm`     #  Unload the drivers
+```
+modprobe -r nvidia-drm
+#  Unload the drivers
+```     
 
-`rmmod` also unloads the drivers
-
-`systemctl start graphical.target`  restarts the graphical target
+```
+rmmod
+# also unloads the drivers
+```
+```
+systemctl start graphical.target
+# restarts the graphical target
+```
 
 
 ### Various other tricks for installing NVIDIA CUDA etc
