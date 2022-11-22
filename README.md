@@ -169,6 +169,16 @@ Inxi. ...
 lsblk - List block devices
 ```
 
+### list installed packages in apt
+sudo apt list --installed
+
+### show where debian package is installed
+dpkg -L linux-tools-4.15.0-197
+
+
+### check linux kernel version
+uname -r
+
 
 ### What are the various keybindings that work both in Emacs and by default in Mac OS?
 
