@@ -179,6 +179,8 @@ dpkg -L linux-tools-4.15.0-197
 ### check linux kernel version
 uname -r
 
+# super hardcore system reboot in linux
+systemctl --force --force reboot
 
 ### What are the various keybindings that work both in Emacs and by default in Mac OS?
 
