@@ -93,6 +93,8 @@ gnome-screenshot -a
 fuser -k 8000/udp
 ```
 
+`fuser` comes from `apt-get install psmisc`
+
 
 ### How to stop displaymanager
 
