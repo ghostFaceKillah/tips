@@ -247,6 +247,7 @@ systemctl --force --force reboot
 | C-f         | move screen up one page   |
 |`:%!xxd`     | to switch into hex mode   |
 |`:%!xxd` -r  | switch back from hex mode |
+| ZZ          | same as :qw but in normal | 
 
 
 
