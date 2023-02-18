@@ -96,6 +96,17 @@ fuser -k 8000/udp
 `fuser` comes from `apt-get install psmisc`
 
 
+### How to show all network connections in unix?
+
+```
+netstat -natpe
+```
+
+You can also `grep` it `netstat -natpe | grep 7001`
+
+`netstat` comes from `sudo apt-get install net-tools`
+
+
 ### How to stop displaymanager
 
 ```
